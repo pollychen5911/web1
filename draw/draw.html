@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽吃</title>
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>要吃什麼</h1>
+
+        <select id="storeSelect">
+            <option selected disabled>請選擇第幾餐廳</option>
+            <option value="1">第一餐廳</option>
+            <option value="2">第二餐廳</option>
+            <option value="3">第三餐廳</option>
+            <option value="4">第四餐廳</option>
+        </select>
+
+        <select id="typeSelect">
+            <option selected disabled>請選擇類型</option>
+            <option value="正餐">正餐</option>
+            <option value="點心">點心</option>
+            <option value="飲料">飲料</option>
+        </select>
+      
+        <div class="show-name">
+            <h2 id="title">抽獎</h2>
+        </div>
+        <div class="choose">
+            <input id="but" type="button" value="開始" onclick="draw()"/>
+        </div>
+        <div id="celebrate"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="javascripts/script.js"></script>
+
+</body>
+</html>

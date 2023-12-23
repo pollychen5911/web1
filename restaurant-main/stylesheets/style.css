@@ -1,0 +1,357 @@
+/*通用*/
+@font-face {
+    font-family: NotoSansTC;
+    src: url(text/NotoSansTC-Bold.woff);
+  }
+@font-face {
+    font-family: NotoSerifTC;
+    src: url(text/NotoSerifTC-Black.otf);
+    font-weight: 900;
+    font-display: swap;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    background-position: absolute;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+p {
+    margin-top: 0;
+    height: 20px;
+}
+ul{
+    padding:2px;
+}
+.container {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    text-align: left;
+}
+
+.background-container{
+    background-color: #fff;
+}
+
+.flex-container{
+    display: flex;
+}
+h1{
+    font-family: NotoSerifTC;
+    text-align: center;
+}
+
+/*通用end*/
+
+/*前往餐廳*/
+.icon{
+    margin-right:.5rem;
+    color:#EB8F90;
+}
+.property-item{
+    box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.2);
+    overflow:hidden;
+    border-radius:7px;
+    transition: .5s;
+}
+.property-item img{
+    transition: .5s;
+}
+.property-item img:hover{
+    transform: scale(1.1);
+}
+.restaurant-box{
+    
+    flex: 1;
+    width:24%;
+    padding: 3px;
+}
+.restaurant-lebel{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    background-color:#fff;
+    color:#446F99;
+    position:absolute;
+    left:0;
+    bottom:0;
+    margin-right:1.5rem;
+    margin-left:1.5rem;
+    padding-top:.25rem;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+.text{
+    padding:1.5rem;
+    padding-bottom:0;
+}
+.restaurant-name{
+    
+    display:block;
+    margin-top:0;
+    margin-bottom:.5rem;
+    font-weight:700;
+    line-height:1.2;
+    color:#0E2E50;
+    margin-bottom:.5rem;
+    transition: .5s;
+}
+.up{
+    overflow:hidden;
+    position:relative;
+}
+.restaurant-img{
+    max-width:100%;
+    height:auto
+}
+/*前往餐廳end*/
+
+/*學校地圖*/
+
+.school-map{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.background{
+    background-color: lightgray;
+}
+.position-out{
+    position: relative;
+}
+.marker1{
+    top: 3%;
+    left: 67.5%;
+}
+.marker2{
+    top: 25%;
+    left: 49%;
+}
+.marker3{
+    top: 76%;
+    left: 39%;
+}
+.marker4{
+    top: 20%;
+    left: 71%;
+}
+.position-out .marker{
+    position: absolute;
+    text-align: center;
+    z-index: 5;
+    opacity: 1;
+    transition: all .5s;
+}  
+.position-out .marker i{
+    color:#12406A;
+    animation: hovering 1s ease-in-out infinite alternate;
+}
+.position-out .marker .shadow{
+    width: 18px;
+    height: 4px;
+    background: #5d72a0;
+    border-radius: 50%;
+    margin: 5px auto 0 auto;
+    animation: shadow 1s ease-in-out infinite alternate;
+}
+.card1{
+    top: 2%;
+    left: 64%;
+}
+.card2{
+    top: 24%;
+    left: 46%;
+}
+.card3{
+    top: 75%;
+    left: 36%;
+}
+.card4{
+    top: 19%;
+    left: 68%;
+}
+.position-out .card{
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    transform: perspective(600px) rotateY(90deg);
+    pointer-events: none;
+    transition: all .5s ease;
+    &.active{
+        transform: perspective(600px) rotateY(0deg);
+        pointer-events: all;
+        transition: all .5s;
+    }
+}
+.position-out .card img{
+        max-width:100%;
+        height:auto
+} 
+.position-out .card p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        margin: 2px 0;
+}
+@keyframes hovering{
+    from{
+        transform: translate3d(0,0,0);
+    }
+    to{
+        transform: translate3d(0,-5px,0);
+    }
+}
+@keyframes shadow{
+    from{
+        transform: scale(1) translate3d(0,0,0);
+    }
+    to{
+        transform: scale(1.25) translate3d(0,0,0);
+    }
+}
+/*學校地圖end*/
+
+/*表格*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+th, td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th{
+    background-color: #f6e3e2;
+    
+}
+
+tr{
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0.5px 2px rgba(0, 0, 0, 0.1);
+    transition: 1.5s;
+}
+tbody tr:hover{
+    z-index:10;
+    animation: swcolor 1s; 
+    box-shadow: 0.5px 2px rgba(0, 0, 0, 0.2);
+    background:#efefef;
+    
+}
+/*表格 end*/
+
+/*顯示建築名稱*/
+.slide-animation {
+    animation: slideIn 0.5s ease-in-out; 
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/*顯示建築名稱end*/
+
+/*按鈕*/
+.btn {
+    border: 0 solid;
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.5;
+    border-radius: 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    padding: 1.8rem 5rem;
+    position: relative;
+  }
+  
+  .btn .content {
+    color: #000;
+    display: grid;
+    height: 84%;
+    left: 0;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: transform 0.2s;
+  }
+  .btn:hover .content {
+    transform: translateY(4%);
+  }
+  
+  .btn:active .content {
+    transform: translateY(8%);
+  }
+
+  /*RWD*/
+@media screen and (max-width: 600px){
+    .flex-container{
+        display: block;
+    }
+
+    .restaurant-box{
+      flex:0 0 auto;
+      width: 95%;
+      height: auto; 
+      padding: 3px;
+    }
+}
+@media screen and (max-width: 900px){
+    .marker1{
+        top: 1%;
+        left: 74%;
+    }
+    .marker2{
+        top: 20%;
+        left: 49%;
+    }
+    .marker3{
+        top: 72%;
+        left: 35%;
+    }
+    .marker4{
+        top: 20%;
+        left: 77%;
+    }
+    .school-map{
+        width: 95%;
+    }
+    .card1{
+        top: 2%;
+        left: 67%;
+    }
+    .card2{
+        top: 24%;
+        left: 50%;
+    }
+    .card3{
+        top: 75%;
+        left: 36%;
+    }
+    .card4{
+        top: 19%;
+        left: 68%;
+    }
+}

@@ -17,38 +17,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2044b3775e.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <section class="header">
-      <nav>
-          <a href="home.html"><img src="images/ntou_logo.png" width="50px" height="50px"></a>
-          <div class="menu-bar" id="divlinks">
-              <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
-              <ul>
-                  <li><i class="fa-solid fa-house"></i><a href="https://debby930726.github.io/112web/Home/home.html">首頁</a>
-                  </li>
-                  <li><i class="fa-solid fa-utensils"></i>餐廳
-                      <div class="sub-menu1">
-                          <ul>
-                              <li><a href="https://debby930726.github.io/112web/Home/restaurant-1.html">第一餐廳</a></li>
-                              <li><a href="https://debby930726.github.io/112web/Home/restaurant-2.html">第二餐廳</a></li>
-                              <li><a href="https://debby930726.github.io/112web/Home/restaurant-3.html">第三餐廳</a></li>
-                              <li><a href="https://debby930726.github.io/112web/Home/restaurant-4.html">第四餐廳</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li><i class="fa-solid fa-map"></i><a href="">地圖導覽</a></li>
-                  <li><i class="fa-solid fa-envelope"></i><a href="https://debby930726.github.io/112web/Home/contact.html">聯絡我們</a></li>
-              </ul>
-          </div>
-          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-      </nav>
-    </section>
+  <section class="header">
+    <nav>
+        <a href="home.html"><img src="images/ntou_logo.png" width="50px" height="50px"></a>
+        <div class="menu-bar" id="divlinks">
+            <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="https://debby930726.github.io/112web/Home/home.html"><i class="fa-solid fa-house"></i>首頁</a>
+                </li>
+                <li><i class="fa-solid fa-utensils"></i>餐廳
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="https://debby930726.github.io/112web/Home/restaurant-1.html">第一餐廳</a></li>
+                            <li><a href="https://debby930726.github.io/112web/Home/restaurant-2.html">第二餐廳</a></li>
+                            <li><a href="https://debby930726.github.io/112web/Home/restaurant-3.html">第三餐廳</a></li>
+                            <li><a href="https://debby930726.github.io/112web/Home/restaurant-4.html">第四餐廳</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://pollychen5911.github.io/web1/project/map/index.html"><i
+                            class="fa-solid fa-map"></i>地圖導覽</a></li>
+                <li><a href="https://pollychen5911.github.io/web1/project/draw/draw.html"><i
+                            class="fa-solid fa-question"></i>抽抽樂</a></li>
+                <li><a href="https://demo-h25d.onrender.com/"><i class="fa-solid fa-pencil"></i>即時評分</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="https://debby930726.github.io/112web/Home/contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
 
-    <div data-aos="fade-up" class="container">
+    <div class="container">
         <div class="title">SATISFACTION SURVEY</div><br>
         <form id="add-rate-form">
           <div class="user__details">
@@ -116,7 +118,7 @@
         </form>
       </div><br><br><hr><br><br>
 
-      <div data-aos="fade-up" class="title">VIEW COMMENTS</div><br>
+      <div class="title">VIEW COMMENTS</div><br>
       <select id="restaurantFilter" placeholder-text="Item 1">
         <option value="全部">全部</option>
         <option value="第一餐廳">第一餐廳</option>
@@ -153,7 +155,5 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="javascripts/script.js"></script>
-    
-    <script>AOS.init({duration:1000});</script>
 </body>
 </html>

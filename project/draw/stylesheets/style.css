@@ -1,7 +1,15 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f4;
 }
 
 nav {
@@ -22,12 +30,12 @@ nav {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    color: #12406A;
+    color: #12406a;
 }
 
 .menu-bar ul li a {
     text-decoration: none;
-    color: #12406A;
+    color: #12406a;
     font-size: 15px;
 }
 
@@ -35,7 +43,7 @@ nav {
     content: '';
     width: 0%;
     height: 1px;
-    background: #12406A;
+    background: #12406a;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -47,7 +55,7 @@ nav {
 
 .menu-bar .fa-solid {
     margin-right: 8px;
-    color: #12406A;
+    color: 12406a;
 }
 
 .sub-menu1 {
@@ -61,7 +69,7 @@ nav {
     background: #12406a54;
     margin-top: 10px;
     margin-left: 15px;
-    z-index: 4;
+    z-index: 2;
 }
 
 .menu-bar ul li:hover .sub-menu1 ul {
@@ -81,49 +89,11 @@ nav {
 }
 
 .menu-bar ul li:hover .sub-menu1 ul li a:hover {
-    color: #4689c8;
+    color: #f4f4f4;
 }
 
 nav .fa-solid {
     display: none;
-}
-
-.text-box {
-    width: 90%;
-    color: #12406a;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
-}
-
-.text-box h1 {
-    font-size: 62px;
-}
-
-.text-box h2 {
-    margin: 10px 0 40px;
-    font-size: 45px;
-    color: #12406a;
-}
-
-.hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #12406a;
-    border: 1px solid #12406a;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-.hero-btn:hover {
-    border: 1px solid #12406A;
-    background: #12406A;
-    transition: 1s;
 }
 
 
@@ -133,23 +103,22 @@ div ul .fa-solid {
 }
 
 @media(max-width:700px) {
-    .text-box h1 {
-        font-size: 30px;
+    section{
+        z-index: 100;
     }
-
-    .text-box h2 {
+    .text-box h1 {
         font-size: 20px;
     }
 
     .menu-bar {
         position: absolute;
-        background: #12406a;
+        background: #f4f4f4;
         height: 100vh;
         width: 200px;
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 3;
+        z-index: 100;
         transition: 1s;
     }
 
@@ -165,14 +134,14 @@ div ul .fa-solid {
 
     nav .fa-solid {
         display: block;
-        color: #12406A;
+        color: #12406a;
         font-size: 22px;
         cursor: pointer;
     }
 
     div .fa-solid {
         display: block;
-        color: #12406A;
+        color: #12406a;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;

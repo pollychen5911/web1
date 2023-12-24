@@ -139,3 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
         enableDisableButton();
     });
 });
+
+var divlinks = document.getElementById("divlinks");
+function showMenu() {
+    divlinks.style.right = "0";
+}
+function hideMenu() {
+    divlinks.style.right = "-200px";
+}

@@ -1,21 +1,23 @@
 /*顯示建築名稱*/
-function showLocationName(area) {
-    var locationName = area.getAttribute('data-name');
-    var coords = area.getAttribute('coords').split(',');
+document.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() === 'area') {
+        var x = event.clientX;
+        var y = event.clientY;
 
-    var x = parseInt(coords[0]);
-    var y = parseInt(coords[1]);
+        // 調整座標，使得 locationDiv 以滑鼠點擊位置為中心
+        var locationDiv = document.getElementById('locationName');
+        var rect = locationDiv.getBoundingClientRect();
+        locationDiv.innerText = event.target.getAttribute('data-name');
+        locationDiv.style.left = x - 70 + "px";
+        locationDiv.style.top = y - 130 + "px";
+        locationDiv.style.display = 'block';
+        locationDiv.classList.add('slide-animation');
 
-    var locationDiv = document.getElementById('locationName');
-    locationDiv.innerText = locationName;
-    locationDiv.style.left = x + 190 + "px";
-    locationDiv.style.top = y + "px";
-    locationDiv.style.display = 'block';
-    locationDiv.classList.add('slide-animation');
-    setTimeout(function () {
-        locationDiv.classList.remove('slide-animation');
-    }, 500); 
-}
+        setTimeout(function () {
+            locationDiv.classList.remove('slide-animation');
+        }, 500);
+    }
+});
 /*顯示建築名稱end*/
 
 /*防跳對話框*/
@@ -92,4 +94,11 @@ $('.card4').bind('click', function() {
 	$('.marker4').removeClass('inactive');
 });
 /*card end*/
+var divlinks = document.getElementById("divlinks");
+function showMenu() {
+    divlinks.style.right = "0";
+}
+function hideMenu() {
+    divlinks.style.right = "-200px";
+}
 

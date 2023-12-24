@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #12406A;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.choose {
+    text-align: center;
+    margin-top: 20px;
+}
+select {
+    border: 2px solid  #12406A;
+}
+#svg-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+    z-index: -1; 
+}
+
+.svg-container svg {
+    position: relative;
+    z-index: -1; 
+}
+
+.container, #storeSelect, #typeSelect, #title, .choose, #but, #celebrate {
+    z-index: 2;
+}
+#but {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #B5CFDE;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#but:hover {
+    background-color: #94a8b4;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+#but:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed; 
+    box-shadow: none; 
+    color: #fff;
+}
+
+.show-name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#celebrate {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #12406A;
+}
+.store-name {
+    color: #12406A;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.food-winner {
+    color: #12406A;
+    font-size: 22px; 
+    font-weight: bold; 
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+

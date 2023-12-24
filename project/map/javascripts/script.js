@@ -6,8 +6,8 @@ document.addEventListener('click', function(event) {
 
         var locationDiv = document.getElementById('locationName');
         locationDiv.innerText = event.target.getAttribute('data-name');
-        locationDiv.style.left = x - 20 + "px";
-        locationDiv.style.top = y + "px";
+        locationDiv.style.left = x - 25 + "px";
+        locationDiv.style.top = y + -10 + "px";
         locationDiv.style.position = 'fixed';  // 使用 fixed 使其相對於視窗固定位置
         locationDiv.style.display = 'block';
         locationDiv.classList.add('slide-animation');

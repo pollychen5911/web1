@@ -4,12 +4,11 @@ document.addEventListener('click', function(event) {
         var x = event.clientX;
         var y = event.clientY;
 
-        // 調整座標，使得 locationDiv 以滑鼠點擊位置為中心
         var locationDiv = document.getElementById('locationName');
-        var rect = locationDiv.getBoundingClientRect();
         locationDiv.innerText = event.target.getAttribute('data-name');
-        locationDiv.style.left = x - 70 + "px";
-        locationDiv.style.top = y - 130 + "px";
+        locationDiv.style.left = x - 20 + "px";
+        locationDiv.style.top = y + "px";
+        locationDiv.style.position = 'fixed';  // 使用 fixed 使其相對於視窗固定位置
         locationDiv.style.display = 'block';
         locationDiv.classList.add('slide-animation');
 

@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+
+.menu-bar {
+    flex: 1;
+    text-align: right;
+}
+
+
+.menu-bar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: #12406A;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #12406A;
+    font-size: 15px;
+}
+
+.menu-bar ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #12406A;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu-bar ul li:hover::after {
+    width: 100%;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 8px;
+    color: #12406A;
+}
+
+.sub-menu1 {
+    display: none;
+    z-index: 1;
+}
+
+.menu-bar ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background: #12406a54;
+    margin-top: 10px;
+    margin-left: 15px;
+    z-index: 4;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li a:hover {
+    color: #4689c8;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.text-box {
+    width: 90%;
+    color: #12406a;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box h2 {
+    margin: 10px 0 40px;
+    font-size: 45px;
+    color: #12406a;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #12406a;
+    border: 1px solid #12406a;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #12406A;
+    background: #12406A;
+    transition: 1s;
+}
+
+
+
+div ul .fa-solid {
+    display: inline;
+}
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 30px;
+    }
+
+    .text-box h2 {
+        font-size: 20px;
+    }
+
+    .menu-bar {
+        position: absolute;
+        background: #12406a;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 3;
+        transition: 1s;
+    }
+
+    .menu-bar ul {
+        padding: 30px;
+    }
+
+    .menu-bar ul li {
+        display: block;
+    }
+
+
+
+    nav .fa-solid {
+        display: block;
+        color: #12406A;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    div .fa-solid {
+        display: block;
+        color: #12406A;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    div ul .fa-solid {
+        display: none;
+    }
+
+}
+
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #12406A;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.choose {
+    text-align: center;
+    margin-top: 20px;
+}
+select {
+    border: 2px solid  #12406A;
+}
+#svg-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+    z-index: -1; 
+}
+
+.svg-container svg {
+    position: relative;
+    z-index: -1; 
+}
+
+.container, #storeSelect, #typeSelect, #title, .choose, #but, #celebrate {
+    z-index: 2;
+}
+#but {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #B5CFDE;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#but:hover {
+    background-color: #94a8b4;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+#but:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed; 
+    box-shadow: none; 
+    color: #fff;
+}
+
+.show-name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#celebrate {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #12406A;
+}
+.store-name {
+    color: #12406A;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.food-winner {
+    color: #12406A;
+    font-size: 22px; 
+    font-weight: bold; 
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    #svg-container {
+        width: 30px;
+    }
+}
+
+
+

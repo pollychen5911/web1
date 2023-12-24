@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2044b3775e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/ntou_logo.png" width="50px" height="50px"></a>
+            <div class="menu-bar" id="divlinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="home.html">首頁</a>
+                    </li>
+                    <li><i class="fa-solid fa-utensils"></i>餐廳
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="restaurant-1.html">第一餐廳</a></li>
+                                <li><a href="restaurant-2.html">第二餐廳</a></li>
+                                <li><a href="restaurant-3.html">第三餐廳</a></li>
+                                <li><a href="restaurant-4.html">第四餐廳</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><i class="fa-solid fa-map"></i><a href="">地圖導覽</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Food is Life</h1>
+            <h2><strong>吃飽了就不怕上課</strong></h2>
+        </div>
+    </section>
+
+    <!-----------slide-------------->
+    <div class="slider_container">
+        <div class="restaurant">
+            <img src="images/restaurant1.jpg" alt="pure css3 slider" />
+            <span class="info">夢泉商場</span>
+        </div>
+        <div class="restaurant">
+            <img src="images/restaurant1-2.jpg" alt="pure css3 slider" />
+            <span class="info">夢泉商場</span>
+        </div>
+        <div class="restaurant">
+            <img src="images/restaurant2.jpg" alt="pure css3 slider" />
+            <span class="info">勇泉商場</span>
+        </div>
+        <div class="restaurant">
+            <img src="images/restaurant2.jpg" alt="pure css3 slider" />
+            <span class="info">勇泉商場</span>
+        </div>
+        <div class="restaurant">
+            <img src="images/restaurant3.png" alt="pure css3 slider" />
+            <span class="info">工學院餐廳</span>
+        </div>
+
+    </div>
+
+    <!----special--------->
+    <section class="special">
+        <h1>Special We Have</h1>
+        <div class="row">
+            <div class="special-col">
+                <h3>菜單</h3>
+                <p>統整學校各間餐廳的菜單</p>
+            </div>
+            <div class="special-col">
+                <h3>抽抽樂</h3>
+                <p>為不知道要吃什麼的你做出決定</p>
+            </div>
+            <div class="special-col">
+                <h3>評分</h3>
+                <p>可即時為店家進行評分，與看到他人對此店家的評價</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="special-col">
+                <h3>地圖</h3>
+                <p>提供學校地圖與餐廳的位置</p>
+            </div>
+            <div class="special-col">
+                <h3>RWD</h3>
+                <p>支援跨平台裝置，不論桌機、平版電腦、手機，都能輕鬆瀏覽網頁</p>
+            </div>
+            <div class="special-col">
+                <h3>聯絡我們</h3>
+                <p>有任何想法或建議歡迎與我們聯絡</p>
+            </div>
+        </div>
+    </section>
+
+    <!---------------餐廳------------>
+
+    <section class="good">
+        <h1>Introduction restaurants</h1>
+        <div class="row">
+            <div class="good-col">
+                <a href="restaurant-1.html">
+                    <img src="images/restaurant1.jpg"></a>
+                <h3>夢泉商場</h3>
+                <p>距離女一最近的餐廳，也是學校裡位<br>置空間最大的餐廳</p>
+            </div>
+            <div class="good-col">
+                <a href="restaurant-2.html"><img src="images/restaurant2.jpg"></a>
+                <h3>勇泉商場</h3>
+                <p>距離男三女二最近的餐廳</p>
+            </div>
+            <div class="good-col">
+                <a href="restaurant-3.html">
+                    <img src="images/restaurant3.png"></a>
+                <h3>工學院餐廳</h3>
+                <p>全校空間最小的餐廳，雖然餐飲選擇較<br>少，仍然是工學院人們最常用餐的地方</p>
+            </div>
+            <div class="good-col">
+                <a href="restaurant-4.html">
+                    <img src="images/cover2.jpg"></a>
+                <h3>第四餐廳</h3>
+                <p>學生會所促成的活動，每週三皆會有<br>不同的餐車到來，被部分學生稱為第四餐廳</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!--------function---------->
+    <section class="function">
+        <h1>Our main function</h1>
+        <p>除了基本的菜單展示，還增加了抽抽樂系統及評分系統，幫忙決定要吃什麼，並增加吃飯的樂趣</p>
+        <div class="row">
+            <div class="function-col">
+                <a href="restaurant-1.html"><img src="images/cover.jpg">
+                    <div class="layer">
+                        <h3>菜單</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="function-col">
+                <a href="../draw/draw.html">
+                    <img src="images/cover.jpg">
+                    <div class="layer">
+                        <h3>抽抽樂</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="function-col">
+                <a href="restaurant-1.html">
+                    <img src="images/cover.jpg">
+                    <div class="layer">
+                        <h3>評分</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!----------to action-------->
+    <section class="action">
+        <h1>Contact us</h1>
+        <a href="contact.html" class="hero-btn2">Contact</a>
+    </section>
+
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-angle-up"></i></a>
+
+
+    <!----------JS for toggle menu-------->
+    <script>
+        var divlinks = document.getElementById("divlinks");
+        function showMenu() {
+            divlinks.style.right = "0";
+        }
+        function hideMenu() {
+            divlinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

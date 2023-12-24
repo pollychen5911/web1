@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>第四餐廳</title>
+    <link rel="stylesheet" href="restaurant4-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2044b3775e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/ntou_logo.png" width="50px" height="50px"></a>
+            <div class="menu-bar" id="divlinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="home.html">首頁</a>
+                    </li>
+                    <li><i class="fa-solid fa-utensils"></i>餐廳
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="restaurant-1.html">第一餐廳</a></li>
+                                <li><a href="restaurant-2.html">第二餐廳</a></li>
+                                <li><a href="restaurant-3.html">第三餐廳</a></li>
+                                <li><a href="restaurant-4.html">第四餐廳</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><i class="fa-solid fa-map"></i>地圖導覽</li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>餐車</h1>
+    </section>
+    <!-----------gallery-------------->
+    <section class="gallery">
+        <h1 class="section-header">Images</h1>
+        <div class="main-content">
+            <div class="box">
+                <img src="images/img4-1.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Bee
+                        </h2>
+                        <p>煙燻BBQ堡</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img4-2.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>TT french bread
+                        </h2>
+                        <p>法式紅酒牛肉</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img4-3.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>野人胖小巴
+                        </h2>
+                        <p>讚岐炒烏龍</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img4-4.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>野老闆窯烤披薩
+                        </h2>
+                        <p>義式小辣雞</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="main-content">
+            <div class="box">
+                <img src="images/img4-8.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Bee
+                        </h2>
+                        <p>蜂蜜芥末堡</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img4-6.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>Surfing Dog 衝浪狗
+                        </h2>
+                        <p>照燒雞腿日式炒麵</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img4-5.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>野人胖小巴
+                        </h2>
+                        <p>韓式辣炒麵</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img4-7.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>KK手工窯烤披薩行動餐車
+                        </h2>
+                        <p>燻雞培根披薩</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script>
+        /*----------JS for toggle menu--------*/
+        var divlinks = document.getElementById("divlinks");
+        function showMenu() {
+            divlinks.style.right = "0";
+        }
+        function hideMenu() {
+            divlinks.style.right = "-200px";
+        }
+
+        /*------- menubotton------------*/
+
+    </script>
+</body>
+
+</html>

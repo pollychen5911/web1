@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2044b3775e.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -38,8 +40,8 @@
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>Food is Life</h1>
-            <h2><strong>吃飽了就不怕上課</strong></h2>
+            <h1 data-aos="fade-up">Food is Life</h1>
+            <h2 data-aos="fade-up"><strong>吃飽了就不怕上課</strong></h2>
         </div>
     </section>
 
@@ -70,8 +72,8 @@
 
     <!----special--------->
     <section class="special">
-        <h1>Special We Have</h1>
-        <div class="row">
+        <h1 data-aos="fade-up">Special We Have</h1>
+        <div data-aos="fade-up"  class="row">
             <div class="special-col">
                 <h3>菜單</h3>
                 <p>統整學校各間餐廳的菜單</p>
@@ -85,7 +87,7 @@
                 <p>可即時為店家進行評分，與看到他人對此店家的評價</p>
             </div>
         </div>
-        <div class="row">
+        <div  data-aos="fade-up" class="row">
             <div class="special-col">
                 <h3>地圖</h3>
                 <p>提供學校地圖與餐廳的位置</p>
@@ -104,8 +106,8 @@
     <!---------------餐廳------------>
 
     <section class="good">
-        <h1>Introduction restaurants</h1>
-        <div class="row">
+        <h1 data-aos="fade-up">Introduction restaurants</h1>
+        <div data-aos="fade-up" class="row">
             <div class="good-col">
                 <a href="restaurant-1.html">
                     <img src="images/restaurant1.jpg"></a>
@@ -134,9 +136,9 @@
     <br>
     <!--------function---------->
     <section class="function">
-        <h1>Our main function</h1>
-        <p>除了基本的菜單展示，還增加了抽抽樂系統及評分系統，幫忙決定要吃什麼，並增加吃飯的樂趣</p>
-        <div class="row">
+        <h1 data-aos="fade-up">Our main function</h1>
+        <p data-aos="fade-up">除了基本的菜單展示，還增加了抽抽樂系統及評分系統，幫忙決定要吃什麼，並增加吃飯的樂趣</p>
+        <div data-aos="fade-up" class="row">
             <div class="function-col">
                 <a href="restaurant-1.html"><img src="images/cover.jpg">
                     <div class="layer">
@@ -153,7 +155,7 @@
                 </a>
             </div>
             <div class="function-col">
-                <a href="restaurant-1.html">
+                <a href="../draw/draw.html">
                     <img src="images/cover.jpg">
                     <div class="layer">
                         <h3>評分</h3>
@@ -164,7 +166,7 @@
     </section>
 
     <!----------to action-------->
-    <section class="action">
+    <section data-aos="fade-up" class="action">
         <h1>Contact us</h1>
         <a href="contact.html" class="hero-btn2">Contact</a>
     </section>
@@ -183,7 +185,8 @@
         }
 
     </script>
-
+    
+    <script>AOS.init({duration:1000});</script>
 </body>
 
 </html>

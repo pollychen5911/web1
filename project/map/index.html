@@ -4,101 +4,49 @@
 <head>
     <meta charset="utf-8">
     <title>Main Restsurant</title>
-
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2044b3775e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     
-    </div>
-    
-    <!-- 前往餐廳 -->
-    <div class="background-container">
-        <div class="container" >
-            <h1 data-aos="fade-up">前往餐廳</h1>
-            <div style="float: left;">
-                <p>點擊下方圖片查看餐廳清單</p>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/ntou_logo.png" width="50px" height="50px"></a>
+            <div class="menu-bar" id="divlinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="../Home/home.html">首頁</a>
+                    </li>
+                    <li><i class="fa-solid fa-utensils"></i>餐廳
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="../Home/restaurant-1.html">第一餐廳</a></li>
+                                <li><a href="../Home/restaurant-2.html">第二餐廳</a></li>
+                                <li><a href="../Home/restaurant-3.html">第三餐廳</a></li>
+                                <li><a href="../Home/restaurant-4.html">第四餐廳</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><i class="fa-solid fa-map"></i><a href="">地圖導覽</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="../Home/contact.html">聯絡我們</a></li>
+                </ul>
             </div>
-            <div style="margin: 5px; margin-right: 0;">
-                <button class="btn">
-                    <span class="content" ><a><i class="fa fa-clipboard-list me-2"></i>前往查看菜單</a></span>
-                </button>
-            </div>
-            <div class="flex-container" data-aos="fade-zoom-in">
-                
-                    <div class="restaurant-box">
-                        <div class="property-item">
-                            <div class="up">
-                                <a id="restaurant1"><img class="restaurant-img" src="images/restaurant1.jpg" alt=""></a>
-                                <div class="restaurant-lebel">一餐</div>
-                            </div>
-                            <div class="text">
-                                <a id="restaurant1" class="restaurant-name">第一餐廳（夢泉商場）</a>
-                                <p><i class="fa fa-map-marker-alt icon"></i>女一舍前</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="restaurant-box">
-                        <div class="property-item">
-                            <div class="up">
-                                <a id="restaurant2"><img class="restaurant-img" src="images/restaurant2.jpg" alt=""></a>
-                                <div class="restaurant-lebel">二餐</div>
-                            </div>
-                            <div class="text">
-                                <a id="restaurant2" class="restaurant-name">第二餐廳（勇泉商場）</a>
-                                <p><i class="fa fa-map-marker-alt icon"></i>男三女二舍前</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                
-                    <div class="restaurant-box">
-                        <div class="property-item">
-                            <div class="up">
-                                <a id="restaurant3"><img class="restaurant-img" src="images/restaurant3.jpg" alt=""></a>
-                                <div class="restaurant-lebel">三餐</div>
-                            </div>
-                            <div class="text">
-                                <a id="restaurant3" class="restaurant-name">第三餐廳（工學院餐廳）</a>
-                                <p><i class="fa fa-map-marker-alt icon"></i>工學院B1</p>
-                            </div>
-                            
-                        </div>
-                    </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
 
-                    <div class="restaurant-box">
-                        <div class="property-item">
-                            <div class="up">
-                                <a id="restaurant4"><img class="restaurant-img" src="images/restaurant4.png" alt=""></a>
-                                <div class="restaurant-lebel">四餐</div>
-                            </div>
-                            <div class="text">
-                                <a id="restaurant4" class="restaurant-name">第四餐廳（餐車）</a>
-                                <p><i class="fa fa-map-marker-alt icon"></i>展示廳前</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-            </div></br>
-            
-            <div id="introduction" style="width: 100%; margin-left: 0; margin-top: 0; margin-bottom: 0;">
-                <table id="restaurant-list">
-                    <thead><tr><th>餐廳名稱</th><th>類型</th></tr></thead>
-                </table>
-            </div>
-        </div></br>
-    </div>
-    <!-- 前往餐廳end -->
-    
     
     <!-- 學校地圖 -->
     <div class="container">
-        <h1 data-aos="fade-up">餐廳位置</h1>
+        <h1 style="font-size: 40px; font-style: italic; font-weight: bold; color: #12406A;" data-aos="fade-up">REESTAURANT LOCATION</h1>
 
         <div class="position-out">
             <div>
@@ -190,22 +138,92 @@
                 <area alt="地下道" title="地下道" coords="1673,1304,1711,1526" onclick="showLocationName(this)" data-name="地下道" shape="rect">
             </map>
             <div id="locationName" style="position: absolute; display: none;"></div></br>
-        </div>
+        </div><br><br>
 
         
     </div>
     <!-- 學校地圖end -->
+        <!-- 前往餐廳 -->
+        <div class="background-container">
+            <div class="container" >
+
+                <div class="flex-container" data-aos="fade-zoom-in">
+                    
+                        <div class="restaurant-box">
+                            <div class="property-item">
+                                <div class="up">
+                                    <a id="restaurant1"><img class="restaurant-img" src="images/restaurant1.jpg" alt=""></a>
+                                    <div class="restaurant-lebel">一餐</div>
+                                </div>
+                                <div class="text">
+                                    <a href="../Home/restaurant-1.html" id="restaurant1" class="restaurant-name">第一餐廳（夢泉商場）</a>
+                                    <p><i class="fa fa-map-marker-alt icon"></i>女一舍前</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="restaurant-box">
+                            <div class="property-item">
+                                <div class="up">
+                                    <a id="restaurant2"><img class="restaurant-img" src="images/restaurant2.jpg" alt=""></a>
+                                    <div class="restaurant-lebel">二餐</div>
+                                </div>
+                                <div class="text">
+                                    <a href="../Home/restaurant-2.html" id="restaurant2" class="restaurant-name">第二餐廳（勇泉商場）</a>
+                                    <p><i class="fa fa-map-marker-alt icon"></i>男三女二舍前</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="restaurant-box">
+                            <div class="property-item">
+                                <div class="up">
+                                    <a id="restaurant3"><img class="restaurant-img" src="images/restaurant3.jpg" alt=""></a>
+                                    <div class="restaurant-lebel">三餐</div>
+                                </div>
+                                <div class="text">
+                                    <a href="../Home/restaurant-3.html" id="restaurant3" class="restaurant-name">第三餐廳（工學院餐廳）</a>
+                                    <p><i class="fa fa-map-marker-alt icon"></i>工學院B1</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="restaurant-box">
+                            <div class="property-item">
+                                <div class="up">
+                                    <a href="../Home/restaurant-4.html" id="restaurant4"><img class="restaurant-img" src="images/restaurant4.png" alt=""></a>
+                                    <div class="restaurant-lebel">四餐</div>
+                                </div>
+                                <div class="text">
+                                    <a id="restaurant4" class="restaurant-name">第四餐廳（餐車）</a>
+                                    <p><i class="fa fa-map-marker-alt icon"></i>展示廳前</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div></br>
+                
+                <div id="introduction" style="width: 100%; margin-left: 0; margin-top: 0; margin-bottom: 0;">
+                    <table id="restaurant-list">
+                        <thead><tr><th>餐廳名稱</th><th>類型</th></tr></thead>
+                    </table>
+                </div>
+            </div></br>
+        </div><br><br><hr><br><br>
+        <!-- 前往餐廳end -->
 
     <!-- google地圖 -->
     <div class="background-container" >
         <div class="container">
             <div>
-                <h1 data-aos="fade-up">如何到NTOU</h1>
+                <h1  style="font-size: 40px; font-style: italic; font-weight: bold; color: #12406A;" data-aos="fade-up">GET TO NTOU</h1>
                 <iframe class="school-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.5603795856164!2d121.77319530927087!3d25.15054953349886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4f063c44f073%3A0x58da11f75dcc14d!2z5ZyL56uL6Ie654Gj5rW35rSL5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1701708001160!5m2!1szh-TW!2stw" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-down" data-aos-delay="500"></iframe>
             </div>
                 
         </div>
-    </div>
+    </div><br>
     <!-- google地圖end -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="javascripts/jquery.rwdImageMaps.js"></script>

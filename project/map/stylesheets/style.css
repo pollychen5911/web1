@@ -1,9 +1,11 @@
 * {
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
+    width: 100%;
+    height: auto;
+    text-align: center;
     justify-content: center;
     align-items: center;
     min-height: 100vh;

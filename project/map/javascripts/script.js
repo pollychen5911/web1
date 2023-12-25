@@ -8,15 +8,21 @@ document.addEventListener('click', function(event) {
         locationDiv.innerText = event.target.getAttribute('data-name');
         locationDiv.style.left = x - 25 + "px";
         locationDiv.style.top = y + -10 + "px";
-        locationDiv.style.position = 'fixed';  // 使用 fixed 使其相對於視窗固定位置
+        locationDiv.style.position = 'fixed';  
         locationDiv.style.display = 'block';
         locationDiv.classList.add('slide-animation');
 
         setTimeout(function () {
             locationDiv.classList.remove('slide-animation');
         }, 500);
+
+        window.addEventListener('scroll', function() {
+            locationDiv.style.display = 'none';
+        });
     }
 });
+
+
 /*顯示建築名稱end*/
 
 /*防跳對話框*/

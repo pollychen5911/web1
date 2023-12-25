@@ -451,11 +451,11 @@ table {
 }
 @media screen and (max-width: 900px){
     .marker1{
-        top: 1%;
+        top: 0%;
         left: 74%;
     }
     .marker2{
-        top: 20%;
+        top: 19%;
         left: 49%;
     }
     .marker3{
@@ -463,26 +463,72 @@ table {
         left: 35%;
     }
     .marker4{
-        top: 20%;
+        top: 18%;
         left: 77%;
     }
     .school-map{
         width: 95%;
     }
     .card1{
-        top: 2%;
+        top: -1%;
         left: 67%;
     }
     .card2{
-        top: 24%;
-        left: 50%;
+        top: 17%;
+        left: 47%;
     }
     .card3{
-        top: 75%;
-        left: 36%;
+        top: 70%;
+        left: 33%;
     }
     .card4{
-        top: 19%;
+        top: 16%;
         left: 68%;
+    }
+
+    .card2,
+    .card3 {
+        width: 34%;
+    }
+}
+@media screen and (max-width: 600px){
+    .marker1{
+        top: -5%;
+        left: 74%;
+    }
+    .marker2{
+        top: 15%;
+        left: 48%;
+    }
+    .marker3{
+        top: 64%;
+        left: 35%;
+    }
+    .marker4{
+        top: 14%;
+        left: 77%;
+    }
+    .school-map{
+        width: 95%;
+    }
+    .card1{
+        top: -6%;
+        left: 67%;
+    }
+    .card2{
+        top: 12%;
+        left: 44%;
+    }
+    .card3{
+        top: 61%;
+        left: 30%;
+    }
+    .card4{
+        top: 11%;
+        left: 68%;
+    }
+    .card2,
+    .card3 {
+        width: 34%;
     }
 }

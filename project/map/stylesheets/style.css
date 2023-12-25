@@ -9,7 +9,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f4f4f4;
 }
 
 nav {
@@ -176,8 +175,6 @@ ul{
     margin: auto;
 }
 
-
-
 .flex-container{
     display: flex;
 }
@@ -198,6 +195,7 @@ h1{
     overflow:hidden;
     border-radius:7px;
     transition: .5s;
+    background-color: #fff;
 }
 .property-item img{
     transition: .5s;
@@ -206,7 +204,7 @@ h1{
     transform: scale(1.1);
 }
 .restaurant-box{
-    
+
     flex: 1;
     width:24%;
     padding: 3px;

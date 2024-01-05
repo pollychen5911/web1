@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>第三餐廳</title>
+    <link rel="stylesheet" href="restaurant3-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2044b3775e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/ntou_logo.png" width="50px" height="50px"></a>
+            <div class="menu-bar" id="divlinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html"><i class="fa-solid fa-house"></i>首頁</a>
+                    </li>
+                    <li><i class="fa-solid fa-utensils"></i>餐廳
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="restaurant-1.html">第一餐廳</a></li>
+                                <li><a href="restaurant-2.html">第二餐廳</a></li>
+                                <li><a href="restaurant-3.html">第三餐廳</a></li>
+                                <li><a href="restaurant-4.html">第四餐廳</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="https://pollychen5911.github.io/web1/project/map/index.html"><i
+                                class="fa-solid fa-map"></i>地圖導覽</a></li>
+                    <li><a href="https://pollychen5911.github.io/web1/project/draw/draw.html"><i
+                                class="fa-solid fa-question"></i>抽抽樂</a></li>
+                    <li><a href="https://demo-h25d.onrender.com/"><i class="fa-solid fa-pencil"></i>即時評分</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>工學院餐廳</h1>
+    </section>
+    <!-----------gallery-------------->
+    <section class="gallery">
+        <h1 class="section-header">Images</h1>
+        <div class="main-content">
+            <div class="box">
+                <img src="images/img3-1.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>小時光
+                        </h2>
+                        <p>韓式拌飯</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img3-4.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>小時光
+                        </h2>
+                        <p>蛋包飯</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img3-3.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>小時光
+                        </h2>
+                        <p>鍋燒意麵</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img3-2.jpg">
+                <div class="img-text">
+                    <div class="content">
+                        <h2>小時光自助餐
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="section-header"><br>Menus</h1>
+    </section>
+    <!----------mainmenu----------->
+    <section class="mainmenu">
+        <div class="name-button">
+            <button id="rest1" onclick="showimg1()">小時光
+            </button>
+
+        </div>
+        <div id="menu">
+            <img src="images/menuimg/20.png">
+        </div>
+    </section>
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script>
+        /*----------JS for toggle menu--------*/
+        var divlinks = document.getElementById("divlinks");
+        function showMenu() {
+            divlinks.style.right = "0";
+        }
+        function hideMenu() {
+            divlinks.style.right = "-200px";
+        }
+
+        /*------- menubotton------------*/
+        var menudisplay = document.getElementById("menu");
+        function showimg1() {
+            let img = "<img src='images/menuimg/20.png'><img src='images/menuimg/21.png'><img src='images/menuimg/22.png'><img src='images/menuimg/23.png'><img src='images/menuimg/24.png'><img src='images/menuimg/25.png'>";
+            menudisplay.innerHTML = img;
+        }
+
+    </script>
+</body>
+
+</html>
